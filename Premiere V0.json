@@ -1,0 +1,864 @@
+{
+  "title": "Premiere Pro for Razer Tartarus Pro",
+  "maintainers": [
+    "0xAFAEBABE"
+  ],
+  "rules": [
+    {
+      "description": "button -> Add Edit",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 226,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "dpad left -> Zoom In",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 80,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "dpad down -> Zoom Out",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 81,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "dpad up -> Previous Edit",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 82,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "dpad right -> Next Edit",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 79,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+ 
+ 
+    {
+      "description": "01 -> Trim Mode",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 30,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t",
+                "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "02 -> Trim Left",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 31,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "q"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "03 -> Trim Right",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 32,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "04 -> Delete",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 33,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "05 -> Ripple Delete",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 34,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete",
+          "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "06 -> rename",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 43,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "07 -> rectangle",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 20,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "r"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "08 -> text",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 26,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "09 -> send layer backward",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 8,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "10 -> send layer forward",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 21,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "11 -> tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 57,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "12 -> cut",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 4,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "x",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "13 -> copy",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 22,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "14 -> paste",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 7,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "v",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "15 -> return",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 9,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": 40
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "16 -> esc",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 225,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "17 -> control",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 29,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "18 -> shift",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 27,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_shift"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "19 -> option",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 6,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "20 -> command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 44,
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "scroll wheel button -> command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button3"
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 5426,
+                  "product_id": 580
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
